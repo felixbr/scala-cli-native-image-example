@@ -18,7 +18,7 @@ lazy val root = (project in file("."))
     ),
     graalVMNativeImageOptions ++= List(
       "--verbose",
-      "-H:IncludeResources=.*" // Needed so resource files are bundled into the binary (see: https://github.com/oracle/graal/blob/master/substratevm/RESOURCES.md)
+      "-H:IncludeResources=.*txt$" // Needed so resource files are bundled into the binary (see: https://github.com/oracle/graal/blob/master/substratevm/RESOURCES.md)
     )
   )
   .enablePlugins(GraalVMNativeImagePlugin)
