@@ -10,7 +10,10 @@ You need to have the GraalVM `native-image` binary in your `PATH`.
 There are several ways to do this. I recommend to use [sdkman.io](https://sdkman.io/) and install `1.0-rc13` or newer
 
 ```bash
-sdk install java 1.0.0-rc-13-grl
+sdk install java 19.2.0-grl
+
+# make sure ~/.sdkman/candidates/current/bin is in your PATH
+gu install native-image
 ```   
 
 ### Running and building the program
